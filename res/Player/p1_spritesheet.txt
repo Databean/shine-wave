@@ -1,3 +1,4 @@
+res/Player/p1_spritesheet.png
 p1_duck = 365 98 69 71
 p1_front = 0 196 66 92
 p1_hurt = 438 0 69 92
