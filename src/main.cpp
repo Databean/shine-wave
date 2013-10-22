@@ -13,7 +13,7 @@ void init() {
 	glEnable (GL_BLEND); 
 	glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	
-	sheet = Spritesheet::fromTextFile("res/Player/p1_spritesheet.txt");
+	sheet = Spritesheet::fromXMLFile("res/Tiles/tiles_spritesheet.xml");
 }
 
 void display() {

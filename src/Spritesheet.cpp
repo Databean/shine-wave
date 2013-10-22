@@ -1,5 +1,7 @@
 #include "Spritesheet.h"
 
+#include <stdlib.h> //for NULL
+
 #include <GL/gl.h>
 
 #include <stdexcept>
@@ -15,13 +17,13 @@ using std::string;
 using std::unique_ptr;
 using std::nullptr_t;
 
+using tinyxml2::XMLElement;
+using tinyxml2::XMLDocument;
+
 /**
  * Assuming (0,0) is the top left of both the screen and images.
  */
 void drawSprite(const Sprite& sprite, int x, int y) {
-	
-	std::cout << "drawing" << std::endl;
-	
 	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(x, y, 0);
@@ -186,11 +188,39 @@ unique_ptr<Spritesheet> Spritesheet::fromTextFile(const string& fileName) {
 		fileStream >> spriteName >> equals >> x >> y >> width >> height;
 		// The eof doesn't get triggered until after it tries to read the final newline.
 		if(spriteName != "") {
-			std::cout << spriteName << " = " << x << " " << y << " " << width << " " << height << std::endl;
+			//std::cout << spriteName << " = " << x << " " << y << " " << width << " " << height << std::endl;
 			sheet->addSprite(spriteName, new Sprite(*sheet, x, y, width, height));
 		}
 	}
 	
 	return sheet;
 }
+
+/**
+ * Reads in an XML file of the format:
+ * <TextureAtlas imagePath="file.png">
+ *     <SubTexture name="spriteName" x="###" y="###" width="###" height="###"/>
+ *     ...
+ * </TextureAtlas>
+ */
+unique_ptr<Spritesheet> Spritesheet::fromXMLFile(const string& fileName) {
+	XMLDocument doc;
+	///TODO: Error checking
+	doc.LoadFile(fileName.c_str());
+	
+	XMLElement* textureAtlas = doc.FirstChildElement("TextureAtlas");
+	
+	GLuint texture = loadImage(string(textureAtlas->Attribute("imagePath")));
+	
+	unique_ptr<Spritesheet> sheet(new Spritesheet(texture));
+	
+	for(XMLElement* subTexture = textureAtlas->FirstChildElement(); subTexture != NULL; subTexture = subTexture->NextSiblingElement()) {
+		Sprite* sprite = new Sprite(*sheet, subTexture->IntAttribute("x"), subTexture->IntAttribute("y"), subTexture->IntAttribute("width"), subTexture->IntAttribute("height"));
+		//std::cout << string(subTexture->Attribute("name")) << std::endl;
+		sheet->addSprite(string(subTexture->Attribute("name")), sprite);
+	}
+	
+	return sheet;
+}
+
 
