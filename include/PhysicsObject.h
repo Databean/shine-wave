@@ -27,6 +27,8 @@ public:
 	float getMinY() const;
 	float getMaxX() const;
 	float getMaxY() const;
+	
+	void draw();
 };
 
 #endif

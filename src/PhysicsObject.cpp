@@ -40,3 +40,7 @@ float PhysicsObject::getMaxX() const {
 float PhysicsObject::getMaxY() const {
 	return minY + sprite.getHeight();
 }
+
+void PhysicsObject::draw() {
+	sprite.draw(minX, minY);
+}
