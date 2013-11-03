@@ -23,18 +23,18 @@ using tinyxml2::XMLDocument;
 /**
  * Assuming (0,0) is the top left of both the screen and images.
  */
-void drawSprite(const Sprite& sprite, int x, int y) {
+void Sprite::draw(int x, int y) {
 	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(x, y, 0);
-	glBindTexture(GL_TEXTURE_2D, sprite.getSpritesheet().getTexture());
+	glBindTexture(GL_TEXTURE_2D, getSpritesheet().getTexture());
 	
 	//Casting these to float ahead of time for readability.
 	
-	float spriteSheetX = sprite.getX();
-	float spriteSheetY = sprite.getY();
-	float spriteWidth = sprite.getWidth();
-	float spriteHeight = sprite.getHeight();
+	float spriteSheetX = getX();
+	float spriteSheetY = getY();
+	float spriteWidth = getWidth();
+	float spriteHeight = getHeight();
 	
 	float textureWidth = getCurrentTextureWidth();
 	float textureHeight = getCurrentTextureHeight();

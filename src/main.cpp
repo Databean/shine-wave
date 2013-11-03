@@ -21,7 +21,7 @@ void display() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
 	//drawSprite(*sheet->getSprite("p1_front"), 500, 500);
-	drawSprite(Sprite(*sheet, 0, 0, 500, 500), 10, 10);
+	Sprite(*sheet, 0, 0, 500, 500).draw(10, 10);
 	
 	glutSwapBuffers();
 	glFlush ();

@@ -10,8 +10,6 @@
 class Spritesheet;
 class Sprite;
 
-void drawSprite(const Sprite& sprite, int x, int y);
-
 class Sprite {
 private:
 	Sprite(Sprite& other) : spritesheet(other.spritesheet) {}
@@ -34,6 +32,8 @@ public:
 	int getY() const;
 	int getWidth() const;
 	int getHeight() const;
+	
+	void draw(int x, int y);
 };
 
 class Spritesheet {
