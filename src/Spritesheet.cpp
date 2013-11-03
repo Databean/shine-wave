@@ -21,7 +21,7 @@ using tinyxml2::XMLElement;
 using tinyxml2::XMLDocument;
 
 /**
- * Assuming (0,0) is the top left of both the screen and images.
+ * Draw the sprite with the given minimum x and y.
  */
 void Sprite::draw(int x, int y) {
 	glMatrixMode(GL_MODELVIEW);
@@ -66,19 +66,31 @@ void Sprite::draw(int x, int y) {
 	glPopMatrix();
 }
 
+/**
+ * Construct a sprite with the given locations on the sprite sheet, in pixels
+ */
 Sprite::Sprite(Spritesheet& spritesheet, int x, int y, int width, int height) :
 	spritesheet(spritesheet), x(x), y(y), width(width), height(height) {
 	
 }
 
+/**
+ * Destroy the Sprite.
+ */
 Sprite::~Sprite() {
 	
 }
 
+/**
+ * Getter for the spritesheet this sprite is a part of.
+ */
 Spritesheet& Sprite::getSpritesheet() {
 	return spritesheet;
 }
 
+/**
+ * Const getter for the spritesheet this sprite is a part of.
+ */
 const Spritesheet& Sprite::getSpritesheet() const {
 	return spritesheet;
 }

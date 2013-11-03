@@ -10,6 +10,10 @@
 class Spritesheet;
 class Sprite;
 
+/**
+ * An individual frame of something, which may be a static object. Exists only relative to
+ * a particular Spritesheet, on which it has a position and size.
+ */
 class Sprite {
 private:
 	Sprite(Sprite& other) : spritesheet(other.spritesheet) {}
@@ -36,6 +40,11 @@ public:
 	void draw(int x, int y);
 };
 
+/**
+ * An image with many sprites on it. Sprites are identified by name. One of the benefits of using a
+ * spritesheet over individual images is that a spritesheet can be selected in the GPU and then a
+ * bunch of shapes can be drawn in a single command using different sprites.
+ */
 class Spritesheet {
 private:
 	Spritesheet(GLuint texture);
