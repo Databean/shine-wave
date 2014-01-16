@@ -1,0 +1,24 @@
+<level>
+	<spritesheet>res/Tiles/tiles_spritesheet.xml</spritesheet>
+	<elements>
+		<sprite name="grassMid.png">
+			<strip x="0" y="70" count="30"/>
+		</sprite>
+		<sprite name="grassCenter.png">
+			<strip x="0" y="0" count="30"/>
+		</sprite>
+		<sprite name="boxCoin.png">
+			<instance x="1120" y="420"/>
+			<instance x="1470" y="420"/>
+			<instance x="1610" y="420"/>
+		</sprite>
+		<sprite name="box.png">
+			<instance x="1400" y="420"/>
+			<instance x="1540" y="420"/>
+			<instance x="1680" y="420"/>
+		</sprite>
+		<sprite name="boxItem.png">
+			<instance x="1540" y="700"/>
+		</sprite>
+	</elements>
+</level>

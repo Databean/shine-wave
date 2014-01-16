@@ -37,7 +37,7 @@ public:
 	int getWidth() const;
 	int getHeight() const;
 	
-	void draw(int x, int y);
+	void draw(int x, int y) const;
 };
 
 /**

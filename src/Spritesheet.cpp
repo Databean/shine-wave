@@ -23,7 +23,7 @@ using tinyxml2::XMLDocument;
 /**
  * Draw the sprite with the given minimum x and y.
  */
-void Sprite::draw(int x, int y) {
+void Sprite::draw(int x, int y) const {
 	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(x, y, 0);
@@ -43,7 +43,7 @@ void Sprite::draw(int x, int y) {
 	glMatrixMode(GL_TEXTURE);
 	glPushMatrix();
 	glScaled(1.0 / textureWidth, 1.0 / textureHeight, 1);
-	glTranslatef(spriteSheetX, spriteSheetY, 0);
+	glTranslatef(spriteSheetX, -spriteSheetY - spriteHeight, 0);
 	
 	glBegin(GL_QUADS);
 	{

@@ -1,0 +1,521 @@
+<level>
+	<spritesheet>res/Tiles/tiles_spritesheet.xml</spritesheet>
+	<elements>
+		<sprite name="box.png">
+			<instance x="0" y="864"/>
+		</sprite>
+		<sprite name="boxAlt.png">
+			<instance x="0" y="792"/>
+		</sprite>
+		<sprite name="boxCoin.png">
+			<instance x="0" y="720"/>
+		</sprite>
+		<sprite name="boxCoinAlt.png">
+			<instance x="0" y="576"/>
+		</sprite>
+		<sprite name="boxCoinAlt_disabled.png">
+			<instance x="0" y="504"/>
+		</sprite>
+		<sprite name="boxCoin_disabled.png">
+			<instance x="0" y="648"/>
+		</sprite>
+		<sprite name="boxEmpty.png">
+			<instance x="0" y="432"/>
+		</sprite>
+		<sprite name="boxExplosive.png">
+			<instance x="0" y="360"/>
+		</sprite>
+		<sprite name="boxExplosiveAlt.png">
+			<instance x="0" y="216"/>
+		</sprite>
+		<sprite name="boxExplosive_disabled.png">
+			<instance x="0" y="288"/>
+		</sprite>
+		<sprite name="boxItem.png">
+			<instance x="0" y="144"/>
+		</sprite>
+		<sprite name="boxItemAlt.png">
+			<instance x="0" y="0"/>
+		</sprite>
+		<sprite name="boxItemAlt_disabled.png">
+			<instance x="432" y="432"/>
+		</sprite>
+		<sprite name="boxItem_disabled.png">
+			<instance x="0" y="72"/>
+		</sprite>
+		<sprite name="boxWarning.png">
+			<instance x="72" y="648"/>
+		</sprite>
+		<sprite name="brickWall.png">
+			<instance x="216" y="0"/>
+		</sprite>
+		<sprite name="bridge.png">
+			<instance x="216" y="72"/>
+		</sprite>
+		<sprite name="bridgeLogs.png">
+			<instance x="288" y="720"/>
+		</sprite>
+		<sprite name="castle.png">
+			<instance x="288" y="792"/>
+		</sprite>
+		<sprite name="castleCenter.png">
+			<instance x="504" y="288"/>
+		</sprite>
+		<sprite name="castleCenter_rounded.png">
+			<instance x="504" y="720"/>
+		</sprite>
+		<sprite name="castleCliffLeft.png">
+			<instance x="504" y="792"/>
+		</sprite>
+		<sprite name="castleCliffLeftAlt.png">
+			<instance x="648" y="720"/>
+		</sprite>
+		<sprite name="castleCliffRight.png">
+			<instance x="648" y="792"/>
+		</sprite>
+		<sprite name="castleCliffRightAlt.png">
+			<instance x="792" y="288"/>
+		</sprite>
+		<sprite name="castleHalf.png">
+			<instance x="792" y="360"/>
+		</sprite>
+		<sprite name="castleHalfLeft.png">
+			<instance x="432" y="720"/>
+		</sprite>
+		<sprite name="castleHalfMid.png">
+			<instance x="648" y="648"/>
+		</sprite>
+		<sprite name="castleHalfRight.png">
+			<instance x="792" y="648"/>
+		</sprite>
+		<sprite name="castleHillLeft.png">
+			<instance x="648" y="576"/>
+		</sprite>
+		<sprite name="castleHillLeft2.png">
+			<instance x="792" y="576"/>
+		</sprite>
+		<sprite name="castleHillRight.png">
+			<instance x="792" y="504"/>
+		</sprite>
+		<sprite name="castleHillRight2.png">
+			<instance x="792" y="432"/>
+		</sprite>
+		<sprite name="castleLedgeLeft.png">
+			<instance x="856" y="868"/>
+		</sprite>
+		<sprite name="castleLedgeRight.png">
+			<instance x="842" y="868"/>
+		</sprite>
+		<sprite name="castleLeft.png">
+			<instance x="792" y="216"/>
+		</sprite>
+		<sprite name="castleMid.png">
+			<instance x="792" y="144"/>
+		</sprite>
+		<sprite name="castleRight.png">
+			<instance x="792" y="72"/>
+		</sprite>
+		<sprite name="dirt.png">
+			<instance x="792" y="0"/>
+		</sprite>
+		<sprite name="dirtCenter.png">
+			<instance x="720" y="864"/>
+		</sprite>
+		<sprite name="dirtCenter_rounded.png">
+			<instance x="720" y="792"/>
+		</sprite>
+		<sprite name="dirtCliffLeft.png">
+			<instance x="720" y="720"/>
+		</sprite>
+		<sprite name="dirtCliffLeftAlt.png">
+			<instance x="720" y="648"/>
+		</sprite>
+		<sprite name="dirtCliffRight.png">
+			<instance x="720" y="576"/>
+		</sprite>
+		<sprite name="dirtCliffRightAlt.png">
+			<instance x="720" y="504"/>
+		</sprite>
+		<sprite name="dirtHalf.png">
+			<instance x="720" y="432"/>
+		</sprite>
+		<sprite name="dirtHalfLeft.png">
+			<instance x="720" y="360"/>
+		</sprite>
+		<sprite name="dirtHalfMid.png">
+			<instance x="720" y="288"/>
+		</sprite>
+		<sprite name="dirtHalfRight.png">
+			<instance x="720" y="216"/>
+		</sprite>
+		<sprite name="dirtHillLeft.png">
+			<instance x="720" y="144"/>
+		</sprite>
+		<sprite name="dirtHillLeft2.png">
+			<instance x="720" y="72"/>
+		</sprite>
+		<sprite name="dirtHillRight.png">
+			<instance x="720" y="0"/>
+		</sprite>
+		<sprite name="dirtHillRight2.png">
+			<instance x="648" y="864"/>
+		</sprite>
+		<sprite name="dirtLedgeLeft.png">
+			<instance x="842" y="892"/>
+		</sprite>
+		<sprite name="dirtLedgeRight.png">
+			<instance x="842" y="912"/>
+		</sprite>
+		<sprite name="dirtLeft.png">
+			<instance x="504" y="432"/>
+		</sprite>
+		<sprite name="dirtMid.png">
+			<instance x="504" y="360"/>
+		</sprite>
+		<sprite name="dirtRight.png">
+			<instance x="648" y="504"/>
+		</sprite>
+		<sprite name="door_closedMid.png">
+			<instance x="648" y="432"/>
+		</sprite>
+		<sprite name="door_closedTop.png">
+			<instance x="648" y="360"/>
+		</sprite>
+		<sprite name="door_openMid.png">
+			<instance x="648" y="288"/>
+		</sprite>
+		<sprite name="door_openTop.png">
+			<instance x="648" y="216"/>
+		</sprite>
+		<sprite name="fence.png">
+			<instance x="648" y="144"/>
+		</sprite>
+		<sprite name="fenceBroken.png">
+			<instance x="648" y="72"/>
+		</sprite>
+		<sprite name="grass.png">
+			<instance x="648" y="0"/>
+		</sprite>
+		<sprite name="grassCenter.png">
+			<instance x="576" y="864"/>
+		</sprite>
+		<sprite name="grassCenter_rounded.png">
+			<instance x="576" y="792"/>
+		</sprite>
+		<sprite name="grassCliffLeft.png">
+			<instance x="576" y="720"/>
+		</sprite>
+		<sprite name="grassCliffLeftAlt.png">
+			<instance x="576" y="648"/>
+		</sprite>
+		<sprite name="grassCliffRight.png">
+			<instance x="576" y="576"/>
+		</sprite>
+		<sprite name="grassCliffRightAlt.png">
+			<instance x="576" y="504"/>
+		</sprite>
+		<sprite name="grassHalf.png">
+			<instance x="576" y="432"/>
+		</sprite>
+		<sprite name="grassHalfLeft.png">
+			<instance x="576" y="360"/>
+		</sprite>
+		<sprite name="grassHalfMid.png">
+			<instance x="576" y="288"/>
+		</sprite>
+		<sprite name="grassHalfRight.png">
+			<instance x="576" y="216"/>
+		</sprite>
+		<sprite name="grassHillLeft.png">
+			<instance x="576" y="144"/>
+		</sprite>
+		<sprite name="grassHillLeft2.png">
+			<instance x="576" y="72"/>
+		</sprite>
+		<sprite name="grassHillRight.png">
+			<instance x="576" y="0"/>
+		</sprite>
+		<sprite name="grassHillRight2.png">
+			<instance x="504" y="864"/>
+		</sprite>
+		<sprite name="grassLedgeLeft.png">
+			<instance x="849" y="868"/>
+		</sprite>
+		<sprite name="grassLedgeRight.png">
+			<instance x="849" y="894"/>
+		</sprite>
+		<sprite name="grassLeft.png">
+			<instance x="504" y="648"/>
+		</sprite>
+		<sprite name="grassMid.png">
+			<instance x="504" y="576"/>
+		</sprite>
+		<sprite name="grassRight.png">
+			<instance x="504" y="504"/>
+		</sprite>
+		<sprite name="hill_large.png">
+			<instance x="842" y="720"/>
+		</sprite>
+		<sprite name="hill_largeAlt.png">
+			<instance x="864" y="0"/>
+		</sprite>
+		<sprite name="hill_small.png">
+			<instance x="792" y="828"/>
+		</sprite>
+		<sprite name="hill_smallAlt.png">
+			<instance x="792" y="720"/>
+		</sprite>
+		<sprite name="ladder_mid.png">
+			<instance x="504" y="144"/>
+		</sprite>
+		<sprite name="ladder_top.png">
+			<instance x="504" y="72"/>
+		</sprite>
+		<sprite name="liquidLava.png">
+			<instance x="504" y="0"/>
+		</sprite>
+		<sprite name="liquidLavaTop.png">
+			<instance x="432" y="864"/>
+		</sprite>
+		<sprite name="liquidLavaTop_mid.png">
+			<instance x="432" y="792"/>
+		</sprite>
+		<sprite name="liquidWater.png">
+			<instance x="504" y="216"/>
+		</sprite>
+		<sprite name="liquidWaterTop.png">
+			<instance x="432" y="648"/>
+		</sprite>
+		<sprite name="liquidWaterTop_mid.png">
+			<instance x="432" y="576"/>
+		</sprite>
+		<sprite name="lock_blue.png">
+			<instance x="432" y="504"/>
+		</sprite>
+		<sprite name="lock_green.png">
+			<instance x="72" y="576"/>
+		</sprite>
+		<sprite name="lock_red.png">
+			<instance x="432" y="360"/>
+		</sprite>
+		<sprite name="lock_yellow.png">
+			<instance x="432" y="288"/>
+		</sprite>
+		<sprite name="rockHillLeft.png">
+			<instance x="432" y="216"/>
+		</sprite>
+		<sprite name="rockHillRight.png">
+			<instance x="432" y="144"/>
+		</sprite>
+		<sprite name="ropeAttached.png">
+			<instance x="432" y="72"/>
+		</sprite>
+		<sprite name="ropeHorizontal.png">
+			<instance x="432" y="0"/>
+		</sprite>
+		<sprite name="ropeVertical.png">
+			<instance x="360" y="864"/>
+		</sprite>
+		<sprite name="sand.png">
+			<instance x="360" y="792"/>
+		</sprite>
+		<sprite name="sandCenter.png">
+			<instance x="576" y="864"/>
+		</sprite>
+		<sprite name="sandCenter_rounded.png">
+			<instance x="576" y="792"/>
+		</sprite>
+		<sprite name="sandCliffLeft.png">
+			<instance x="360" y="720"/>
+		</sprite>
+		<sprite name="sandCliffLeftAlt.png">
+			<instance x="360" y="648"/>
+		</sprite>
+		<sprite name="sandCliffRight.png">
+			<instance x="360" y="576"/>
+		</sprite>
+		<sprite name="sandCliffRightAlt.png">
+			<instance x="360" y="504"/>
+		</sprite>
+		<sprite name="sandHalf.png">
+			<instance x="360" y="432"/>
+		</sprite>
+		<sprite name="sandHalfLeft.png">
+			<instance x="360" y="360"/>
+		</sprite>
+		<sprite name="sandHalfMid.png">
+			<instance x="360" y="288"/>
+		</sprite>
+		<sprite name="sandHalfRight.png">
+			<instance x="360" y="216"/>
+		</sprite>
+		<sprite name="sandHillLeft.png">
+			<instance x="360" y="144"/>
+		</sprite>
+		<sprite name="sandHillLeft2.png">
+			<instance x="360" y="72"/>
+		</sprite>
+		<sprite name="sandHillRight.png">
+			<instance x="360" y="0"/>
+		</sprite>
+		<sprite name="sandHillRight2.png">
+			<instance x="288" y="864"/>
+		</sprite>
+		<sprite name="sandLedgeLeft.png">
+			<instance x="856" y="892"/>
+		</sprite>
+		<sprite name="sandLedgeRight.png">
+			<instance x="856" y="912"/>
+		</sprite>
+		<sprite name="sandLeft.png">
+			<instance x="288" y="648"/>
+		</sprite>
+		<sprite name="sandMid.png">
+			<instance x="288" y="576"/>
+		</sprite>
+		<sprite name="sandRight.png">
+			<instance x="288" y="504"/>
+		</sprite>
+		<sprite name="sign.png">
+			<instance x="288" y="432"/>
+		</sprite>
+		<sprite name="signExit.png">
+			<instance x="288" y="360"/>
+		</sprite>
+		<sprite name="signLeft.png">
+			<instance x="288" y="288"/>
+		</sprite>
+		<sprite name="signRight.png">
+			<instance x="288" y="216"/>
+		</sprite>
+		<sprite name="snow.png">
+			<instance x="288" y="144"/>
+		</sprite>
+		<sprite name="snowCenter.png">
+			<instance x="720" y="864"/>
+		</sprite>
+		<sprite name="snowCenter_rounded.png">
+			<instance x="288" y="72"/>
+		</sprite>
+		<sprite name="snowCliffLeft.png">
+			<instance x="288" y="0"/>
+		</sprite>
+		<sprite name="snowCliffLeftAlt.png">
+			<instance x="216" y="864"/>
+		</sprite>
+		<sprite name="snowCliffRight.png">
+			<instance x="216" y="792"/>
+		</sprite>
+		<sprite name="snowCliffRightAlt.png">
+			<instance x="216" y="720"/>
+		</sprite>
+		<sprite name="snowHalf.png">
+			<instance x="216" y="648"/>
+		</sprite>
+		<sprite name="snowHalfLeft.png">
+			<instance x="216" y="576"/>
+		</sprite>
+		<sprite name="snowHalfMid.png">
+			<instance x="216" y="504"/>
+		</sprite>
+		<sprite name="snowHalfRight.png">
+			<instance x="216" y="432"/>
+		</sprite>
+		<sprite name="snowHillLeft.png">
+			<instance x="216" y="360"/>
+		</sprite>
+		<sprite name="snowHillLeft2.png">
+			<instance x="216" y="288"/>
+		</sprite>
+		<sprite name="snowHillRight.png">
+			<instance x="216" y="216"/>
+		</sprite>
+		<sprite name="snowHillRight2.png">
+			<instance x="216" y="144"/>
+		</sprite>
+		<sprite name="snowLedgeLeft.png">
+			<instance x="863" y="868"/>
+		</sprite>
+		<sprite name="snowLedgeRight.png">
+			<instance x="863" y="888"/>
+		</sprite>
+		<sprite name="snowLeft.png">
+			<instance x="144" y="864"/>
+		</sprite>
+		<sprite name="snowMid.png">
+			<instance x="144" y="792"/>
+		</sprite>
+		<sprite name="snowRight.png">
+			<instance x="144" y="720"/>
+		</sprite>
+		<sprite name="stone.png">
+			<instance x="144" y="648"/>
+		</sprite>
+		<sprite name="stoneCenter.png">
+			<instance x="144" y="576"/>
+		</sprite>
+		<sprite name="stoneCenter_rounded.png">
+			<instance x="144" y="504"/>
+		</sprite>
+		<sprite name="stoneCliffLeft.png">
+			<instance x="144" y="432"/>
+		</sprite>
+		<sprite name="stoneCliffLeftAlt.png">
+			<instance x="144" y="360"/>
+		</sprite>
+		<sprite name="stoneCliffRight.png">
+			<instance x="144" y="288"/>
+		</sprite>
+		<sprite name="stoneCliffRightAlt.png">
+			<instance x="144" y="216"/>
+		</sprite>
+		<sprite name="stoneHalf.png">
+			<instance x="144" y="144"/>
+		</sprite>
+		<sprite name="stoneHalfLeft.png">
+			<instance x="144" y="72"/>
+		</sprite>
+		<sprite name="stoneHalfMid.png">
+			<instance x="144" y="0"/>
+		</sprite>
+		<sprite name="stoneHalfRight.png">
+			<instance x="72" y="864"/>
+		</sprite>
+		<sprite name="stoneHillLeft2.png">
+			<instance x="72" y="792"/>
+		</sprite>
+		<sprite name="stoneHillRight2.png">
+			<instance x="72" y="720"/>
+		</sprite>
+		<sprite name="stoneLedgeLeft.png">
+			<instance x="863" y="908"/>
+		</sprite>
+		<sprite name="stoneLedgeRight.png">
+			<instance x="864" y="148"/>
+		</sprite>
+		<sprite name="stoneLeft.png">
+			<instance x="72" y="504"/>
+		</sprite>
+		<sprite name="stoneMid.png">
+			<instance x="72" y="432"/>
+		</sprite>
+		<sprite name="stoneRight.png">
+			<instance x="72" y="360"/>
+		</sprite>
+		<sprite name="stoneWall.png">
+			<instance x="72" y="288"/>
+		</sprite>
+		<sprite name="tochLit.png">
+			<instance x="72" y="216"/>
+		</sprite>
+		<sprite name="tochLit2.png">
+			<instance x="72" y="144"/>
+		</sprite>
+		<sprite name="torch.png">
+			<instance x="72" y="72"/>
+		</sprite>
+		<sprite name="window.png">
+			<instance x="72" y="0"/>
+		</sprite>
+	</elements>
+</level>
